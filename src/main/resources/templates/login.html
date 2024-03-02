@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<style>
+    body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 50px;
+    }
+    .conteiner{
+        align-items: center;
+        justify-content: center;
+        background-color: aquamarine;
+        width: 400px;
+        height: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    input{
+        align-items: center;
+        border-radius: 20px;
+        border-color: black;
+        width: 250px;
+        height: 30px;
+    }
+    .h2{
+        text-align: center;
+        display: flex;
+        font-size: 30px;
+    }
+    button{
+        align-items: center;
+        border-radius: 20px;
+        border-color: black;
+        width: 200px;
+        height: 30px;
+    }
+    label{
+        font-size: 20px;
+    }
+</style>
+
+<div class ="conteiner">
+    <form  method="POST" th:action="@{/login}">
+
+        <h1 class="h2">Авторизация</h1><br>
+        <label>Login</label><br>
+        <input class="inp" id="name" type="text" name="name"><br>
+
+        <label>Password</label><br>
+        <input class="inp" id="password" type="text" name="password"><br><br>
+
+        <button type="submit">Войти</button><br>
+        <a href="/registration">Если вы не зарегистрированы!!</a>
+    </form>
+</div>
+</body>
+</html>
